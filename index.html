@@ -60,8 +60,9 @@ Utvecklingen av artificiell intelligens har både blivit populärare och mer akt
 <script>
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
+  annyang.setLanguage('sv-SE');
   var commands = {
-    'show tps report': function() {
+    'söta katter': function() {
       $('#tpsreport').animate({bottom: '-100px'});
     }
   };
