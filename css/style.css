@@ -1,0 +1,6 @@
+body {
+    background-color: white;
+}
+.navbar-item img {
+    max-height: 4.0rem;
+}
