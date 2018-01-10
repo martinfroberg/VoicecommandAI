@@ -1,0 +1,48 @@
+<div class="hero-body">
+  <div class="container has-text-centered">
+    <div class="columns is-vcentered">
+      <div class="column is-5">
+        <h1 class="title is-2">
+          Vad är Artificall Intelligence?
+        </h1>
+        <h2 class="subtitle is-4">
+
+          Utvecklingen av artificiell intelligens har både blivit populärare och mer aktuellt när vi idag har datorer starka nog för att kunna bearbeta den massiva mängden information finns tillgänglig idag. Även då intresset har funnits där i många år sedan 1956 då definitionen av vad en artificiell intelligens utvecklades av John McCarthy(källa), har vi inte förens nu på de senare åren faktiskt fått verktygen för att utveckla en superintelligens.
+
+        </h2>
+        <br>
+        <p class="has-text-centered">
+          <a href="more.html" class="button is-medium is-info is-outlined">
+            More
+          </a>
+        </p>
+      </div>
+
+      <div class="column is-6 is-offset-1">
+        <figure class="image is-6by3">
+          <img src="https://www.idg.se/editorial/980/path/1.693819.1514882531!imageUploader/1894624733.jpg" alt="Description">
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  annyang.setLanguage('sv-SE');
+  annyang.removeCommands();
+  var commands = {
+    'meny': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/meny.html').fadeIn('slow'); });
+    }
+  };
+
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>

@@ -1,0 +1,48 @@
+<div class="hero-body">
+  <div class="container has-text-centered">
+    <div class="columns is-vcentered">
+      <div class="column is-5">
+        <h1 class="title is-2">
+          AI Säkerhet
+        </h1>
+        <h2 class="subtitle is-4">
+
+          Säkerheten kring artificiell intelligens är också stor, inte bara för att olika typer av virus attacker kan visa stora konsekvenser på samhället, så har även artificiell intelligens börjat användas som säkerhetssystemet i sig där den kan analysera ett väldigt stort antal anslutningar samtidigt. Dessutom med utveckling av bildigenkänning har ai börjat användas för att bevaka säkerhetskameror på företag.
+
+
+
+
+        </h2>
+      </div>
+
+      <div class="column is-6 is-offset-1">
+        <figure class="image is-6by3">
+          <img src="https://futureoflife.org/wp-content/uploads/2016/08/robot_AI_safety.jpg" alt="Description">
+
+
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  annyang.setLanguage('sv-SE');
+  annyang.removeCommands();
+  var commands = {
+    'tillbaka': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/meny.html').fadeIn('slow'); });
+    }
+  };
+
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>

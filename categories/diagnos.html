@@ -1,0 +1,50 @@
+<div class="hero-body">
+  <div class="container has-text-centered">
+    <div class="columns is-vcentered">
+      <div class="column is-5">
+        <h1 class="title is-2">
+          AI Diagnos
+        </h1>
+        <h2 class="subtitle is-4">
+
+          En populär utveckling är inom sjukvården, där man försöker få artificiell intelligens att diagnosera patienter, för att noggrant kunna finna vilka sjukdomar som ska botas. Feldiagnostisering är ett problem som uppstår vanligtvis bland doktorer, men att ha en maskin som lär sig utav alla fel samtidigt världen runt skulle reducera det här problemet extremt.
+
+
+
+
+
+        </h2>
+      </div>
+
+      <div class="column is-6 is-offset-1">
+        <figure class="image is-6by3">
+          <img src="https://www.idg.se/editorial/980/path/1.693819.1514882531!imageUploader/1894624733.jpg" alt="Description">
+
+
+
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  annyang.setLanguage('sv-SE');
+  annyang.removeCommands();
+  var commands = {
+    'tillbaka': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/meny.html').fadeIn('slow'); });
+    }
+  };
+
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>

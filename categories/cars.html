@@ -1,0 +1,43 @@
+<div class="hero-body">
+  <div class="container has-text-centered">
+    <div class="columns is-vcentered">
+      <div class="column is-5">
+        <h1 class="title is-2">
+          Självstyrande Bilar
+        </h1>
+        <h2 class="subtitle is-4">
+
+          Självstyrande bilar är även en trend inom bilindustrin, huvudsakliga syftet är att försöka reducera potentiella trafikolyckor med hjälp av att alla bilar kan vara kopplade till varandra i ett nätverk för att noggrant kunna räkna ut distanser och hastigheter.
+
+
+        </h2>
+      </div>
+
+      <div class="column is-6 is-offset-1">
+        <figure class="image is-6by3">
+          <img src="https://fortunedotcom.files.wordpress.com/2017/10/intel_lebron_car_0102_lv_1080x10801.jpg" alt="Description">
+
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  annyang.setLanguage('sv-SE');
+  annyang.removeCommands();
+  var commands = {
+    'tillbaka': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/meny.html').fadeIn('slow'); });
+    }
+  };
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>

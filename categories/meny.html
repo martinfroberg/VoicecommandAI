@@ -1,0 +1,102 @@
+<div class="hero-body">
+  <div class="container has-text-centered">
+    <div class="columns is-vcentered">
+      <div class="column is-3">
+        <h2 class="title is-4">
+          Självstyrande Bilar
+        </h2>
+
+        <figure class="image is-4by3">
+          <img src="https://fortunedotcom.files.wordpress.com/2017/10/intel_lebron_car_0102_lv_1080x10801.jpg" alt="Description">
+        </figure>
+        <br>
+
+        <a href="cars.html" class="button is-medium is-info is-outlined">
+          More
+        </a>
+      </div>
+
+      <div class="column is-3">
+        <h2 class="title is-4">
+          Smarta Hem
+        </h2>
+
+        <figure class="image is-4by3">
+          <img src="https://s.hswstatic.com/gif/smart-home-rev-1000x667.jpg" alt="Description">
+        </figure>
+        <br>
+
+        <a href="home.html" class="button is-medium is-info is-outlined">
+          More
+        </a>
+
+      </div>
+
+      <div class="column is-3">
+        <h2 class="title is-4">
+          AI Säkerhet
+        </h2>
+
+        <figure class="image is-4by3">
+          <img src="https://futureoflife.org/wp-content/uploads/2016/08/robot_AI_safety.jpg" alt="Description">
+        </figure>
+        <br>
+
+        <a href="safety.html" class="button is-medium is-info is-outlined">
+          More
+        </a>
+
+      </div>
+
+      <div class="column is-3">
+        <h2 class="title is-4">
+          AI Diagnos
+        </h2>
+
+        <figure class="image is-4by3">
+          <img src="https://www.idg.se/editorial/980/path/1.693819.1514882531!imageUploader/1894624733.jpg" alt="Description">
+
+        </figure>
+        <br>
+
+        <a href="diagnos.html" class="button is-medium is-info is-outlined">
+          More
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  annyang.setLanguage('sv-SE');
+  annyang.removeCommands();
+  var commands = {
+    'självstyrande bilar': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/cars.html').fadeIn('slow'); });
+    },
+
+    'diagnostik': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/diagnos.html').fadeIn('slow'); });
+    },
+
+    'smarta hem': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/home.html').fadeIn('slow'); });
+    },
+
+    'säkerhet': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/safety.html').fadeIn('slow'); });
+    },
+
+    'tillbaka': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/index.html').fadeIn('slow'); });
+    }
+  };
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>

@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,78 +6,34 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 </head>
-
 <body>
-    <section class="hero is-fullheight is-default is-bold">
-        <div class="hero-head">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item">
-            <img src="http://www.archello.com/sites/default/files/person/media/ai_logo_1.jpg" alt="Logo">
+  <section class="hero is-fullheight is-default is-bold">
+      <div class="hero-head">
+          <nav class="navbar">
+              <div class="container">
+                  <div class="navbar-brand">
+                      <a class="navbar-item">
+          <img src="http://www.archello.com/sites/default/files/person/media/ai_logo_1.jpg" alt="Logo">
+        </a>
+                  </div>
+                  <div id="navbarMenu" class="navbar-menu">
+                      <div class="navbar-start">
+                          <a class="navbar-item">
+            Commands!
           </a>
-                    </div>
-                    <div id="navbarMenu" class="navbar-menu">
-                        <div class="navbar-start">
-                            <a class="navbar-item">
-              Commands!
-            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="columns is-vcentered">
-                    <div class="column is-5">
-                        <h1 class="title is-2">
-                            Vad är Artificall Intelligence?
-                        </h1>
-                        <h2 class="subtitle is-4">
-
-                            Utvecklingen av artificiell intelligens har både blivit populärare och mer aktuellt när vi idag har datorer starka nog för att kunna bearbeta den massiva mängden information finns tillgänglig idag. Även då intresset har funnits där i många år sedan 1956 då definitionen av vad en artificiell intelligens utvecklades av John McCarthy(källa), har vi inte förens nu på de senare åren faktiskt fått verktygen för att utveckla en superintelligens.
-
-                        </h2>
-                        <br>
-                        <p class="has-text-centered">
-                            <a href="more.html" class="button is-medium is-info is-outlined">
-                More
-              </a>
-                        </p>
-                    </div>
-
-                    <div class="column is-6 is-offset-1">
-                        <figure class="image is-6by3">
-                            <img src="https://www.idg.se/editorial/980/path/1.693819.1514882531!imageUploader/1894624733.jpg" alt="Description">
-                        </figure>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
-        <script>
-            if (annyang) {
-                // Let's define our first command. First the text we expect, and then the function it should call
-                annyang.setLanguage('sv-SE');
-                var commands = {
-                    'söta katter': function() {
-                        $('#tpsreport').animate({
-                            bottom: '-100px'
-                        });
-                    }
-                };
-
-                // Add our commands to annyang
-                annyang.addCommands(commands);
-
-                // Start listening. You can call this here, or attach this call to an event, button, etc.
-                annyang.start();
-            }
-
-        </script>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  <div class="content-container">
+  </div>
+    <script>
+    $('.content-container').load('content/index.html');
+    </script>
 </body>
 
 </html>
