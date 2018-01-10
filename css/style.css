@@ -1,6 +1,25 @@
 body {
-    background-color: black;
+    background-image: url('https://f.nordiskemedier.dk/2ce61qwg63k43hjb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100%;
+    overflow: hidden;
 }
 .navbar-item img {
     max-height: 4.0rem;
+}
+
+.overlay-background {
+  background-color: black;
+  opacity: 0.9;
+  border: 0.1px solid black;
+  border-radius: 15px 0 0 15px;
+}
+
+.overlay-background img {
+}
+
+#selfdriving-cars {
+  background-image: url('https://fortunedotcom.files.wordpress.com/2017/10/intel_lebron_car_0102_lv_1080x10801.jpg');
+  background-size: cover;
 }
