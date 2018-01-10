@@ -73,23 +73,23 @@ if (annyang) {
   annyang.setLanguage('sv-SE');
   annyang.removeCommands();
   var commands = {
-    'självstyrande bilar': function() {
+    '(självstyrande bilar) (bilar) (självstyrande) (car) (smartcart) (smartbil) (smart bil)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/cars.html').fadeIn('slow'); });
     },
 
-    'diagnostik': function() {
+    '(diagnostik) (diagnosering) (diagnos) (sjukvård)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/diagnos.html').fadeIn('slow'); });
     },
 
-    'smarta hem': function() {
+    '(smarta hem) (hem) (smarthem) (smart hem)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/home.html').fadeIn('slow'); });
     },
 
-    'säkerhet': function() {
+    '(säkerhet) (virus) (säkert) (anti virus) (skydd)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/safety.html').fadeIn('slow'); });
     },
 
-    'tillbaka': function() {
+    '(tillbaka) (meny) (ämne) (kategorier) (läs mer)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/index.html').fadeIn('slow'); });
     }
   };

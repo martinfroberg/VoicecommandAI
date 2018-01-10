@@ -32,7 +32,7 @@ if (annyang) {
   annyang.setLanguage('sv-SE');
   annyang.removeCommands();
   var commands = {
-    'tillbaka': function() {
+    '(tillbaka) (meny) (ämne) (kategorier) (läs mer)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/meny.html').fadeIn('slow'); });
     }
   };
