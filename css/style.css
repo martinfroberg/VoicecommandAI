@@ -1,22 +1,73 @@
 body {
-    background-image: url('https://f.nordiskemedier.dk/2ce61qwg63k43hjb.jpg');
+    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SHUvqPx7giw9eenf2/videoblocks-tron-blue-artificial-intelligence-ai-grid-with-light-rays-background-animation_sumxbciihg_thumbnail-full01.png');
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 100%;
     overflow: hidden;
+    background-color: black;
+    color: lightgray;
+    text-shadow: 2px 2px black;
+
+    font-family: Verdana, Geneva, sans-serif;
 }
 .navbar-item img {
-    max-height: 4.0rem;
+    max-height: 10em;
+}
+
+img.microphone-icon {
+  content: url('http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-black/foundation/foundation_microphone/foundation_microphone_flat-circle-white-on-black_512x512.png');
+}
+
+.title {
+  margin-top: -75px;
+}
+
+.logo-container img {
+  max-height: 150px;
+  width: auto;
+  margin: 25px;
+}
+
+.logo-container {
+  margin-bottom: 10px;
+}
+
+.logo-container p {
+  float: right;
+  margin-right: 65%;
+  margin-top: 7%;
+}
+
+.logo-container p span img {
+  position: relative;
+  top: 6px;
+  left: 1px;
 }
 
 .overlay-background {
-  background-color: black;
-  opacity: 0.9;
-  border: 0.1px solid black;
-  border-radius: 15px 0 0 15px;
+  overflow: hidden;
+}
+
+.overlay-background p {
+  padding-left: 25px;
+  padding-top: 25px;
+  text-align: left;
+
+}
+
+.title {
+  text-align: center;
+  color: lightgray;
+  font-style: italic;
+  text-shadow: 2px 2px black;
 }
 
 .overlay-background img {
+  float: right;
+  margin-left: 10px;
+  width: 40%;
+  opacity: 0.75;
+  border-radius: 85%;
 }
 
 #selfdriving-cars {

@@ -3,66 +3,43 @@
     <div class="columns is-vcentered">
       <div class="column is-3">
         <h2 class="title is-4">
-          Självstyrande Bilar
+          <span class="icon"><img class="microphone-icon"></img></span>Självstyrande Bilar
         </h2>
 
         <figure class="image is-4by3">
           <img src="https://fortunedotcom.files.wordpress.com/2017/10/intel_lebron_car_0102_lv_1080x10801.jpg" alt="Description">
         </figure>
-        <br>
-
-        <a href="cars.html" class="button is-medium is-info is-outlined">
-          More
-        </a>
       </div>
 
       <div class="column is-3">
         <h2 class="title is-4">
-          Smarta Hem
+          <span class="icon"><img class="microphone-icon"></img></span>Smarthem
         </h2>
 
         <figure class="image is-4by3">
           <img src="https://s.hswstatic.com/gif/smart-home-rev-1000x667.jpg" alt="Description">
         </figure>
-        <br>
-
-        <a href="home.html" class="button is-medium is-info is-outlined">
-          More
-        </a>
-
       </div>
 
       <div class="column is-3">
         <h2 class="title is-4">
-          AI Säkerhet
+          <span class="icon"><img class="microphone-icon"></img></span>Säkerhet
         </h2>
 
         <figure class="image is-4by3">
           <img src="https://futureoflife.org/wp-content/uploads/2016/08/robot_AI_safety.jpg" alt="Description">
         </figure>
-        <br>
-
-        <a href="safety.html" class="button is-medium is-info is-outlined">
-          More
-        </a>
-
       </div>
 
       <div class="column is-3">
         <h2 class="title is-4">
-          AI Diagnos
+          <span class="icon"><img class="microphone-icon"></img></span>Diagnosering
         </h2>
 
         <figure class="image is-4by3">
           <img src="https://www.idg.se/editorial/980/path/1.693819.1514882531!imageUploader/1894624733.jpg" alt="Description">
 
         </figure>
-        <br>
-
-        <a href="diagnos.html" class="button is-medium is-info is-outlined">
-          More
-        </a>
-
       </div>
     </div>
   </div>
@@ -90,6 +67,10 @@ if (annyang) {
     },
 
     '(tillbaka) (meny) (ämne) (kategorier) (läs mer)': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/index.html').fadeIn('slow'); });
+    },
+
+    '(start) (startsida)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/index.html').fadeIn('slow'); });
     }
   };

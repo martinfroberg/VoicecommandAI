@@ -1,10 +1,10 @@
 <h1 class="title">
-  Diagnosering
+  Vad är Artificiell intelligens?
 </h1>
 <div class="overlay-background">
   <img src="https://www.idg.se/editorial/980/path/1.693819.1514882531!imageUploader/1894624733.jpg" alt="Description">
   <p>
-    En populär utveckling är inom sjukvården, där man försöker få artificiell intelligens att diagnosera patienter, för att noggrant kunna finna vilka sjukdomar som ska botas. Feldiagnostisering är ett problem som uppstår vanligtvis bland doktorer, men att ha en maskin som lär sig utav alla fel samtidigt världen runt skulle reducera det här problemet extremt.
+    Utvecklingen av artificiell intelligens har både blivit populärare och mer aktuellt när vi idag har datorer starka nog för att kunna bearbeta den massiva mängden information finns tillgänglig idag. Även då intresset har funnits där i många år sedan 1956 då definitionen av vad en artificiell intelligens utvecklades av John McCarthy(källa), har vi inte förens nu på de senare åren faktiskt fått verktygen för att utveckla en superintelligens.
   </p>
 </div>
 <script>
@@ -13,11 +13,8 @@ if (annyang) {
   annyang.setLanguage('sv-SE');
   annyang.removeCommands();
   var commands = {
-    '(tillbaka) (meny) (ämne) (kategorier) (läs mer)': function() {
+    '(meny) (kategorier) (ämne) (läs mer)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/meny.html').fadeIn('slow'); });
-    },
-    '(start) (startsida)': function() {
-      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/index.html').fadeIn('slow'); });
     }
   };
 

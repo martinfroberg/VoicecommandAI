@@ -1,20 +1,11 @@
-<div class="overlay-background">
-  <h1 class="title">
-    Vad är Artificall Intelligence?
-  </h1>
-  <div class="columns">
-    <div class="column">
-      <p> Utvecklingen av artificiell intelligens har både blivit populärare och mer aktuellt när vi idag har datorer starka nog för att kunna bearbeta den massiva mängden information finns tillgänglig idag. Även då intresset har funnits där i många år sedan 1956 då definitionen av vad en artificiell intelligens utvecklades av John McCarthy(källa), har vi inte förens nu på de senare åren faktiskt fått verktygen för att utveckla en superintelligens.
-      </p>
-    </div>
-    <div class="column">
-      <figure class="image">
-        <img src="https://www.idg.se/editorial/980/path/1.693819.1514882531!imageUploader/1894624733.jpg" alt="Description">
-      </figure>
-    </div>
-  </div>
+<div class="title" style="font-size:60px;">
+  Artificiell Intelligens
 </div>
-</div>
+<p>Den här hemsidan är helt röststyrd. Gör så här:<br>
+1. Acceptera mikrofon tillstånd för hemsidan.<br>
+2. Säg klart och tydligt "Meny" till mikrofonen för att komma till menyn.<br>
+OBS. Du kan också säga "hjälp" för att få upp hjälp menyn med kommandon.</p>
+
 <script>
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
@@ -23,7 +14,10 @@ if (annyang) {
   var commands = {
     '(meny) (kategorier) (ämne) (läs mer)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/meny.html').fadeIn('slow'); });
-    }
+    },
+
+    '(hjälp)': function() {
+      alert("Polis är påväg"); }
   };
 
 

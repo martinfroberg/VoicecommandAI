@@ -1,31 +1,12 @@
-<div class="hero-body">
-  <div class="container has-text-centered">
-    <div class="columns is-vcentered">
-      <div class="column is-5">
-        <h1 class="title is-2">
-          Smarta Hem
-        </h1>
-        <h2 class="subtitle is-4">
-
-          Så kallade smarta hem är en utveckling som går parallellt med artificiell intelligens idag, idén om att ha ett fullt digitalt hem där med hjälp av röststyrning kunna öka temperaturen inomhus eller sätta upp ditt schema med hjälp av rösten. Eller tillochmed gå längre än så att få hemmet att laga din mat eller reparera potentiella skador av sig själv. Ett hem som lär sig utav ditt schema och anpassar sig för dig över tid.
-
-
-
-        </h2>
-      </div>
-
-      <div class="column is-6 is-offset-1">
-        <figure class="image is-6by3">
-          <img src="https://s.hswstatic.com/gif/smart-home-rev-1000x667.jpg" alt="Description">
-
-
-        </figure>
-
-      </div>
-    </div>
-  </div>
+<h1 class="title">
+  Smarthem
+</h1>
+<div class="overlay-background">
+  <img src="https://s.hswstatic.com/gif/smart-home-rev-1000x667.jpg" alt="Description">
+  <p>
+    Så kallade smarta hem är en utveckling som går parallellt med artificiell intelligens idag, idén om att ha ett fullt digitalt hem där med hjälp av röststyrning kunna öka temperaturen inomhus eller sätta upp ditt schema med hjälp av rösten. Eller tillochmed gå längre än så att få hemmet att laga din mat eller reparera potentiella skador av sig själv. Ett hem som lär sig utav ditt schema och anpassar sig för dig över tid.
+  </p>
 </div>
-
 <script>
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
@@ -34,6 +15,9 @@ if (annyang) {
   var commands = {
     '(tillbaka) (meny) (ämne) (kategorier) (läs mer)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/meny.html').fadeIn('slow'); });
+    },
+    '(start) (startsida)': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/index.html').fadeIn('slow'); });
     }
   };
 
