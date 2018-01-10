@@ -1,47 +1,33 @@
-<div class="hero-body">
-  <div class="container has-text-centered">
-    <div class="columns is-vcentered">
-      <div class="column is-3">
-        <h2 class="title is-4">
-          <span class="icon"><img class="microphone-icon"></img></span>Självstyrande Bilar
-        </h2>
-
-        <figure class="image is-4by3">
-          <img src="https://fortunedotcom.files.wordpress.com/2017/10/intel_lebron_car_0102_lv_1080x10801.jpg" alt="Description">
-        </figure>
-      </div>
-
-      <div class="column is-3">
-        <h2 class="title is-4">
-          <span class="icon"><img class="microphone-icon"></img></span>Smarthem
-        </h2>
-
-        <figure class="image is-4by3">
-          <img src="https://s.hswstatic.com/gif/smart-home-rev-1000x667.jpg" alt="Description">
-        </figure>
-      </div>
-
-      <div class="column is-3">
-        <h2 class="title is-4">
-          <span class="icon"><img class="microphone-icon"></img></span>Säkerhet
-        </h2>
-
-        <figure class="image is-4by3">
-          <img src="https://futureoflife.org/wp-content/uploads/2016/08/robot_AI_safety.jpg" alt="Description">
-        </figure>
-      </div>
-
-      <div class="column is-3">
-        <h2 class="title is-4">
-          <span class="icon"><img class="microphone-icon"></img></span>Diagnosering
-        </h2>
-
-        <figure class="image is-4by3">
-          <img src="https://www.idg.se/editorial/980/path/1.693819.1514882531!imageUploader/1894624733.jpg" alt="Description">
-
-        </figure>
-      </div>
-    </div>
+<div class="columns" style="margin-top:-50px;">
+  <div class="column">
+    <p><span class="icon"><img class="microphone-icon"></img></span>AI</p>
+    <figure class="image is-4by3">
+      <img src="https://www.idg.se/editorial/980/path/1.693819.1514882531!imageUploader/1894624733.jpg" alt="Description">
+    </figure>
+  </div>
+  <div class="column">
+    <p><span class="icon"><img class="microphone-icon"></img></span>Självstyrande Bilar</p>
+    <figure class="image is-4by3">
+      <img src="https://fortunedotcom.files.wordpress.com/2017/10/intel_lebron_car_0102_lv_1080x10801.jpg" alt="Description">
+    </figure>
+  </div>
+  <div class="column">
+    <span class="icon"><img class="microphone-icon"></img></span>Smarta hem
+    <figure class="image is-4by3">
+      <img src="https://s.hswstatic.com/gif/smart-home-rev-1000x667.jpg" alt="Description">
+    </figure>
+  </div>
+  <div class="column">
+    <span class="icon"><img class="microphone-icon"></img></span>Säkerhet
+    <figure class="image is-4by3">
+      <img src="https://futureoflife.org/wp-content/uploads/2016/08/robot_AI_safety.jpg" alt="Description">
+    </figure>
+  </div>
+  <div class="column">
+    <span class="icon"><img class="microphone-icon"></img></span>Diagnosering
+    <figure class="image is-4by3">
+      <img src="https://www.idg.se/editorial/980/path/1.693819.1514882531!imageUploader/1894624733.jpg" alt="Description">
+    </figure>
   </div>
 </div>
 <script>
@@ -72,8 +58,15 @@ if (annyang) {
 
     '(start) (startsida)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/index.html').fadeIn('slow'); });
-    }
-  };
+    },
+
+    '(hjälp)': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/help.html').fadeIn('slow'); });
+    },
+
+    '(AI) (Artificiell intelligens) (robot) (vad är ai) (vad är artificiell intelligens) (a i)': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/ai.html').fadeIn('slow'); });
+    }};
   // Add our commands to annyang
   annyang.addCommands(commands);
 

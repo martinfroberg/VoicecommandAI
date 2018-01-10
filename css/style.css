@@ -38,7 +38,7 @@ img.microphone-icon {
   margin-top: 7%;
 }
 
-.logo-container p span img {
+img.microphone-icon {
   position: relative;
   top: 6px;
   left: 1px;
@@ -68,9 +68,4 @@ img.microphone-icon {
   width: 40%;
   opacity: 0.75;
   border-radius: 85%;
-}
-
-#selfdriving-cars {
-  background-image: url('https://fortunedotcom.files.wordpress.com/2017/10/intel_lebron_car_0102_lv_1080x10801.jpg');
-  background-size: cover;
 }

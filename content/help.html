@@ -1,10 +1,13 @@
 <div class="title" style="font-size:60px;">
-  Artificiell Intelligens
+  Hjälp
 </div>
-<p>Den här hemsidan är helt röststyrd. Gör så här:<br>
+<p>Den här hemsidan är helt röststyrd. Funkar det inte, försök att:<br>
 1. Acceptera mikrofon tillstånd för hemsidan.<br>
-2. Säg klart och tydligt "Meny" till mikrofonen för att komma till menyn.<br>
-OBS. Du kan också säga "hjälp" för att få upp hjälp menyn med kommandon.</p>
+2. Kolla så mikrofonen är installerad och fungerar. <a href="localhost/voicecommandai">Hjälp</a><br>
+3. Tala klart och tydligt till mikrofonen. <br><br>
+
+Kommandon som fungerar överallt på hemsidan är "Start", "Meny" och "Hjälp"<br>
+Du kan se kommandon som fungera på specifica delar av sidan med hjälp av den vita mikrofon ikonen brevid titlarna.</p>
 
 <script>
 if (annyang) {
@@ -16,9 +19,9 @@ if (annyang) {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/meny.html').fadeIn('slow'); });
     },
 
-    '(hjälp)': function() {
-        $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/help.html').fadeIn('slow'); });
-      }
+    '(start) (startsida) (stäng)': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/index.html').fadeIn('slow'); });
+    }
   };
 
 

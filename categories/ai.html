@@ -13,12 +13,17 @@ if (annyang) {
   annyang.setLanguage('sv-SE');
   annyang.removeCommands();
   var commands = {
-    '(meny) (kategorier) (ämne) (läs mer)': function() {
+    '(tillbaka) (meny) (ämne) (kategorier) (läs mer)': function() {
       $('.content-container').fadeOut('slow', function (){ $('.content-container').load('categories/meny.html').fadeIn('slow'); });
-    }
+    },
+    '(start) (startsida)': function() {
+      $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/index.html').fadeIn('slow'); });
+    },
+
+    '(hjälp)': function() {
+        $('.content-container').fadeOut('slow', function (){ $('.content-container').load('content/help.html').fadeIn('slow'); });
+      }
   };
-
-
   // Add our commands to annyang
   annyang.addCommands(commands);
 
